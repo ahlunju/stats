@@ -5,7 +5,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('statistics');
+  this.resource('statistics');
+  this.resource('statistic', {path: "/statistics/:id"}, function() {
+    
+  });
 });
 
 export default Router;
