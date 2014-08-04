@@ -1,11 +1,34 @@
 <div class="stat">
   <h4>Statistic</h4>
-  <ul>
-    <li>{{name}}</li>
-    <li>{{location}}</li>
-    <li>{{public_repos}}</li>
-    <li>{{created_at}}</li>
-    <li>{{updated_at}}</li>
-  </ul>
-  <button class="btn btn-primary" {{action }}>Back</button>
+  <aside class="general-info">
+    <ul>
+      <img class="avatar" {{bind-attr src=avatar_url}} alt="profile picture">
+      <li>Name: {{name}}</li>
+      <li>Location: {{location}}</li>
+      <li>Repos: {{public_repos}}</li>
+      <li>User since: {{created_at}}</li>
+      <li>Last commit: {{updated_at}}</li>
+    </ul>
+    <button class="btn btn-primary" {{action backToIndex}}>Back</button>
+  </aside>
+  <section class="detail-info">
+    <table class="table table-striped table-bordered">
+      <tbody>
+        <tr>
+          <td>{{#link-to 'repositories'}}Repositories{{/link-to}}</td>
+        </tr>
+        <tr>
+          <td>{{#link-to 'stars'}}Stars{{/link-to}}</td>
+        </tr>
+        <tr>
+          <td>{{#link-to 'gists'}}Gists{{/link-to}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <section class="row">
+      {{outlet}}
+    </section>
+    
+  </section>
 </div>

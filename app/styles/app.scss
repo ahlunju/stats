@@ -1,6 +1,7 @@
 @import 'vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
 @import '_statistics';
 @import '_statistic';
+@import '_repositories';
 
 html, body {
   // margin: 20px;
@@ -10,4 +11,7 @@ html, body {
 }
 .stats-menu {
   // @extend .navbar;
+  li {
+    display: inline;
+  }
 }

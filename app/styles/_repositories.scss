@@ -1,0 +1,10 @@
+@import 'vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
+
+.repo-list {
+  @extend .col-sm-3;
+}
+
+.repo-detail {
+  @extend .col-sm-9;
+  @extend .well;
+}

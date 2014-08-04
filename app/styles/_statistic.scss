@@ -1,5 +1,26 @@
 @import 'vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
 
 .stat {
-  @extend .col-sm-8;
+  // @extend .row;
+}
+
+.avatar {
+  max-width: 180px;
+  width: 80%;
+}
+
+.general-info {
+  @extend .col-sm-3;
+  @extend .well;
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+.detail-info {
+  @extend .col-sm-9;
+
 }
