@@ -1,9 +1,9 @@
 <aside class="repo-list">
-  <table class="table table-bordered table-striped">
+  <table class="table table-bordered table-hover">
     <tbody>
-    {{#each}}
+    {{#each repository in model}}
     <tr>
-      <td>{{name}}</td>
+      <td>{{#link-to 'repository' repository.id}}{{repository.name}}{{/link-to}}</td>
     </tr>
     {{/each}}
     </tbody>

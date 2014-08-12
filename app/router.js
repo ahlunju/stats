@@ -7,8 +7,8 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('statistics');
   this.resource('statistic', {path: "/statistics/:id"}, function() {
-    this.resource('repositories', function() {
-      this.resource('repository');
+    this.resource('repositories', function(){
+      this.resource('repository',{path: "/:repo_name"});
     });
     // this.resource('repository',{path: '/repositories/:reponame'});
     this.resource('gists');
