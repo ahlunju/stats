@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
+export default Ember.ObjectController.extend({
   repoName : function() {
-    return this.get('name');
-  }.property('name')
+    return this.get('repo_name');
+  }.property('repo_name')
 });
