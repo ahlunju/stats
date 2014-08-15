@@ -10,7 +10,7 @@ Router.map(function() {
     this.resource('repositories', function(){
       this.resource('repository',{path: "/:repo_name"});
     });
-    // this.resource('repository',{path: '/repositories/:reponame'});
+    this.resource('repository',{path: '/repositories/:reponame'});
     this.resource('gists');
     this.resource('stars');
   });
