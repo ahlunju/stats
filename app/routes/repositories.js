@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function() {
-    var statistic = this.modelFor('statistic');
     // return Ember.$.getJSON(statistic.repos_url);
     return [
               {
@@ -1725,6 +1724,6 @@ export default Ember.Route.extend({
                 "watchers": 0,
                 "default_branch": "master"
               }
-            ]
+            ];
   }
 });
