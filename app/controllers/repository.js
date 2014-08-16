@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.ObjectController.extend({
-  repoName : function() {
-    return this.get('repo_name');
-  }.property('repo_name')
+  repoId : function() {
+    return this.get('id');
+  }.property('id')
 });

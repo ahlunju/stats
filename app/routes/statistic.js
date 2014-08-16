@@ -1,8 +1,7 @@
 import Ember from 'ember';
-import DS from 'ember-data';
 
 export default Ember.Route.extend({
-  model: function(params) {
+  model: function() {
     // return Ember.$.getJSON('https://api.github.com/users/' + params.id+"?client_id=1f8fd211b249522fcde3&client_secret=652cd979e412052650473db8e9beeeccaf1e0d21");
     return {
               "login": "ahlunju",
@@ -35,7 +34,7 @@ export default Ember.Route.extend({
               "following": 8,
               "created_at": "2013-01-16T16:34:41Z",
               "updated_at": "2014-08-15T02:03:03Z"
-            }
+            };
   }
 });
 
