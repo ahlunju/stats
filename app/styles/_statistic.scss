@@ -1,26 +1,36 @@
 @import 'vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
 
 .stat {
-  // @extend .row;
-}
-
-.avatar {
-  max-width: 180px;
-  width: 80%;
+  @extend .container;
 }
 
 .general-info {
-  @extend .col-sm-3;
+  @extend .col-sm-6;
   @extend .well;
+  @extend .clearfix;
   ul {
     padding: 0;
+    display: inline;
   }
   li {
     list-style: none;
   }
 }
 
-.detail-info {
-  @extend .col-sm-9;
+.back-navigate {
+  margin: 20px 0;
+}
+.avatar {
+  max-width: 180px;
+  width: 90%;
+  margin: 0 20px 0 0;
+  float: left;
+}
 
+.detail-info {
+  @extend .col-sm-6;
+}
+
+.info-section {
+  @extend .container;
 }

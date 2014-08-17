@@ -1,15 +1,15 @@
 <div class="stat">
   <h4>Statistic</h4>
   <aside class="general-info">
+    <img class="avatar" {{bind-attr src=avatar_url}} alt="profile picture">
     <ul>
-      <img class="avatar" {{bind-attr src=avatar_url}} alt="profile picture">
       <li>Name: {{name}}</li>
       <li>Location: {{location}}</li>
       <li>Repos: {{public_repos}}</li>
       <li>User since: {{created_at}}</li>
       <li>Last commit: {{updated_at}}</li>
     </ul>
-    <button class="btn btn-primary" {{action backToIndex}}>Back</button>
+    <button class="btn btn-primary back-navigate" {{action backToIndex}}>Back</button>
   </aside>
   <section class="detail-info">
     <table class="table table-striped table-bordered">
@@ -25,10 +25,10 @@
         </tr>
       </tbody>
     </table>
-    <hr>
-    <section class="row">
-      {{outlet}}
-    </section>
-    
   </section>
 </div>
+<section class="info-section">
+  <hr>
+  <h4>Detail Statistic</h4>
+  {{outlet}}
+</section>
