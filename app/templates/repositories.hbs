@@ -1,15 +1,13 @@
+<div class="repo-info">
 <aside class="repo-list">
-  <table class="table table-bordered table-hover">
-    <tbody>
+  <ul>
     {{#each repository in model}}
-    <tr>
-      <td>{{#link-to 'repository' repository}}{{repository.name}}{{/link-to}}</td>
-    </tr>
+      <li>{{#link-to 'repository' repository}}{{repository.name}}{{/link-to}}</li>
     {{/each}}
-    </tbody>
-  </table>
+  </ul>
 </aside>
 <section class="repo-detail">
   <h4>Repository Detail</h4>
   {{outlet}}
 </section>
+</div>

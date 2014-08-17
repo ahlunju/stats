@@ -1,7 +1,27 @@
 @import 'vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
-
+.repo-info {
+  @extend .row;
+}
 .repo-list {
   @extend .col-sm-3;
+  ul {
+    padding: 0;
+    li {
+      border-top: 1px solid #ddd;
+      list-style: none;
+      a {
+        padding: 8px;
+        display: block;
+      }
+      &:hover a{
+        color: orange;
+        text-decoration: none;
+      }
+    }
+    li:last-of-type {
+      border-bottom: 1px solid #ddd;
+    }
+  }
 }
 
 .repo-detail {
