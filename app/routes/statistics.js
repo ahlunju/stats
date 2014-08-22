@@ -2,13 +2,16 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function () {
+    var url = 'https://api.github.com/users/ahlunju'
     var developers = [
-      { name: 'Yalun Zhu', id: 'ahlunju'},
-      { name:'Carlos Ar', id: 'carlitosspot'},
-      { name:'Richard Heras', id: 'Richardheras'},
-      { name:'David Balogun', id: 'webdev34'}
+      { name:'Carlos Ar', login: 'carlitosspot'},
+      { name:'Richard Heras', login: 'Richardheras'},
+      { name:'David Balogun', login: 'webdev34'}
     ];
-
+    var data = Ember.$.getJSON(url).done(function(data) {
+      console.log(data);
+      developers[developers.length] = data; //add ahlunju from API to developer array; doesn't work
+    });
     return developers;
   }
 });

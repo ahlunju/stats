@@ -5,13 +5,13 @@
   <table class="table table-striped table-bordered">
     <tbody>
       {{#each developer in model}}
-        <tr><td>{{#link-to 'statistic' developer.id}}{{developer.name}}{{/link-to}}</td></tr>
+        <tr><td>{{#link-to 'statistic' developer.login}}{{developer.name}}{{/link-to}}</td></tr>
       {{/each}}
     </tbody>
   </table>
 </div>
 <form class="developer-search-section">
-  <label for="developer">Search Developer</label>
+  <label for="developer">Search Developer:</label>
   {{input }}
 </form>
 <button class="btn btn-primary" {{action "clickMe"}}>Button</button>
