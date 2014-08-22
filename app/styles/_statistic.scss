@@ -5,7 +5,7 @@
 }
 
 .general-info {
-  @extend .col-sm-6;
+  @extend .col-sm-4;
   @extend .well;
   @extend .clearfix;
   ul {
@@ -29,7 +29,7 @@
 }
 
 .detail-info {
-  @extend .col-sm-6;
+  @extend .col-sm-8;
 }
 
 .info-section {
