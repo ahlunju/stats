@@ -8,10 +8,11 @@ export default Ember.Route.extend({
       { name:'Richard Heras', login: 'Richardheras'},
       { name:'David Balogun', login: 'webdev34'}
     ];
-    var data = Ember.$.getJSON(url).done(function(data) {
+    var data = Ember.$.getJSON(url).then(function(data) {
       console.log(data);
-      developers[developers.length] = data; //add ahlunju from API to developer array; doesn't work
+      developers[developers.length] = data;
+      return developers;
     });
-    return developers;
+    return data;
   }
 });
