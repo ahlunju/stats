@@ -1,9 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
+  
   actions : {
-    clickMe: function() {
-      console.log('hello');
+    getUserLogin: function() {
+      console.log('the github user you entered:');
+      console.log(this.get('login'));
     }
   }
 });

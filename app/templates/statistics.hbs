@@ -10,8 +10,8 @@
     </tbody>
   </table>
 </div>
-<form class="developer-search-section">
-  <label for="developer">Search Developer:</label>
-  {{input }}
+<form class="developer-search-section form-group col-sm-8" {{action "getUserLogin" on="submit"}}>
+  <label for="login">Search Developer:</label>
+  {{input class="form-control" type="text" value=login placeholder="Search a Githuber"}}
+  <button class="btn btn-primary" type="submit" {{action "getUserLogin"}}>Button</button>
 </form>
-<button class="btn btn-primary" {{action "clickMe"}}>Button</button>
