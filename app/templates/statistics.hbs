@@ -5,7 +5,17 @@
   <table class="table table-striped table-bordered">
     <tbody>
       {{#each developer in model}}
-        <tr><td>{{#link-to 'statistic' developer.login}}{{developer.name}}{{/link-to}}</td></tr>
+        <tr>
+          <td>
+          {{#link-to 'statistic' developer.login}}
+            {{#if developer.name}}
+              {{developer.name}}
+            {{else}}
+              {{developer.login}} (Github Username)
+            {{/if}}
+          {{/link-to}}
+          </td>
+        </tr>
       {{/each}}
     </tbody>
   </table>
@@ -15,9 +25,9 @@
   {{input type="text" value=login placeholder="Search a Githuber"}}
   <button class="search-user" type="submit" {{action "getUserLogin"}}>Button</button>
 </form>
-<div>
+{{!-- <div>
 <p>{{githuber.login}}</p>
 <p>{{githuber.name}}</p>
 <p>{{githuber.location}}</p>
 <p>{{githuber.url}}</p>
-</div>
+</div> --}}

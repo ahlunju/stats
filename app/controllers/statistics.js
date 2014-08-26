@@ -12,6 +12,7 @@ export default Ember.ArrayController.extend({
           self.set('githuber', data);
           model.pushObject(data); //make API call and add to the list
         });
+        this.set('login'); //reset
       }
     }
   }

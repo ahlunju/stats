@@ -20,9 +20,9 @@
   }
 }
 .search-user {
+  @extend .btn;
   @extend .btn-block;
   @extend .btn-lg;
-  @extend .btn;
   @extend .btn-primary;
   font-size: 18px;
   margin: 5px 0;
