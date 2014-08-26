@@ -12,11 +12,18 @@
   @extend .col-sm-4;
 }
 
+.developer-search-section {
+  @extend .col-sm-8;
+  @extend .form-group;
+  input {
+    @extend .form-control;
+  }
+}
 .search-user {
   @extend .btn-block;
   @extend .btn-lg;
   @extend .btn;
   @extend .btn-primary;
-  margin: 5px 0;
   font-size: 18px;
+  margin: 5px 0;
 }
