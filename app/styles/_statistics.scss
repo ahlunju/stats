@@ -1,5 +1,3 @@
-@import 'vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
-
 .statistics-header {
   @extend .well;
 }
@@ -12,4 +10,13 @@
 
 .stats {
   @extend .col-sm-4;
+}
+
+.search-user {
+  @extend .btn-block;
+  @extend .btn-lg;
+  @extend .btn;
+  @extend .btn-primary;
+  margin: 5px 0;
+  font-size: 18px;
 }
