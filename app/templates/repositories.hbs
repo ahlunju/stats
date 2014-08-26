@@ -2,7 +2,11 @@
 <aside class="repo-list">
   <ul>
     {{#each repository in model}}
-      <li>{{#link-to 'repository' repository}}{{repository.name}}{{/link-to}}</li>
+      <li>
+        {{#link-to 'repository' repository}}
+          {{repository.name}}
+        {{/link-to}}
+      </li>
     {{/each}}
   </ul>
 </aside>
