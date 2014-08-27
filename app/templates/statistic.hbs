@@ -1,34 +1,23 @@
+<h4>Statistic</h4>
 <div class="stat">
-  <h4>Statistic</h4>
   <aside class="general-info">
     <img class="avatar" {{bind-attr src=avatar_url}} alt="profile picture">
-    <ul>
+        <button class="btn btn-primary back-navigate" {{action backToIndex}}>Back</button>
+  </aside>
+  <ul class="user-stat">
       <li>Name: {{name}}</li>
       <li>Location: {{location}}</li>
       <li>Repos: {{public_repos}}</li>
       <li>User since: {{created_at}}</li>
       <li>Last commit: {{updated_at}}</li>
     </ul>
-    <button class="btn btn-primary back-navigate" {{action backToIndex}}>Back</button>
-  </aside>
-  <section class="detail-info">
-    <table class="table table-striped table-bordered">
-      <tbody>
-        <tr>
-          <td>{{#link-to 'repositories'}}Repositories{{/link-to}}</td>
-        </tr>
-        <tr>
-          <td>{{#link-to 'stars'}}Stars{{/link-to}}</td>
-        </tr>
-        <tr>
-          <td>{{#link-to 'gists'}}Gists{{/link-to}}</td>
-        </tr>
-        <tr>
-          <td>{{#link-to 'friends'}}Friends{{/link-to}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+
+  <div class="detail-info">
+   {{#link-to 'repositories'}}Repositories{{/link-to}}
+   {{#link-to 'stars'}}Stars{{/link-to}}
+   {{#link-to 'gists'}}Gists{{/link-to}}
+   {{#link-to 'friends'}}Friends{{/link-to}}
+  </div>
 </div>
 <section class="info-section">
   <hr>

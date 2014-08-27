@@ -1,33 +1,34 @@
 .stat {
   @extend .container;
+  @extend .well;
+  @extend .clearfix;
 }
 
 .general-info {
   @extend .col-sm-4;
-  @extend .well;
-  @extend .clearfix;
-  ul {
-    padding: 0;
-    display: inline;
-  }
-  li {
-    list-style: none;
-  }
 }
 
-.back-navigate {
-  margin: 20px 0;
-}
 .avatar {
   max-width: 180px;
   width: 90%;
-  margin: 0 20px 0 0;
-  float: left;
+  margin: 20px;
   border-radius: 50%;
 }
 
+.user-stat {
+  @extend .list-group;
+  @extend .col-sm-4;
+  li {
+    @extend .list-group-item;
+  }
+}
+
 .detail-info {
-  @extend .col-sm-8;
+  @extend .col-sm-4;
+  @extend .list-group;
+  a {
+    @extend .list-group-item;
+  }
 }
 
 .info-section {
