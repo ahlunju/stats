@@ -3,7 +3,9 @@
     <li>Repository Name: {{name}}</li>
     <li>Description: {{description}}</li>
     <li>Main Language: {{language}}</li>
-    <li>Size: {{size}} bits</li>
-    <li>Forked from: {{homepage}}</li>
+    <li><i class="fa fa-database">&nbsp;</i>Size: {{size}} bits</li>
+    {{#if homepage}}
+    <li><i class="fa fa-code-fork">&nbsp;</i>Forked from: {{homepage}}</li>
+    {{/if}}
   </ul>
 </div>

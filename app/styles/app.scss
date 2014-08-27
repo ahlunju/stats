@@ -12,7 +12,7 @@ html, body {
   @extend .container;
 }
 .stats-menu {
-  // @extend .navbar;
+  @extend .breadcrumb;
   li {
     display: inline;
   }

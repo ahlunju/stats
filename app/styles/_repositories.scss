@@ -2,7 +2,7 @@
   @extend .row;
 }
 .repo-list {
-  @extend .col-sm-3;
+  @extend .col-xs-3;
   ul {
     padding: 0;
     li {
@@ -24,8 +24,13 @@
 }
 
 .repo-detail {
-  @extend .col-sm-9;
-  @extend .well;
+  @extend .col-xs-9;
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
 }
 
 
