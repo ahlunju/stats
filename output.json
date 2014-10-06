@@ -1,0 +1,29 @@
+{
+"hasPastInvoices": false,
+"billingStatus": {
+  "messageClass": "error",
+  "messageText": "Your account is past due. Please take immediate action to update payment information or risk termination"
+},
+"paymentInformation": {
+  "cardType": "mastercard",
+  "lastFour": "4444",
+  "expireDate": "10/17"
+},
+"billingItems": [
+  {
+    "id": 1234,
+    "name": "Booker Basic Monthly",
+  "terms": "$65 / month"
+  },
+  {
+    "id": 1235,
+    "name": "Native Booking App. Monthly",
+    "terms": "$25 / month"
+  },
+  {
+    "id": 1236,
+    "name": "Marketing Network Referral Fees",
+    "terms": "12% of total order value"
+  }
+]
+}
