@@ -7,24 +7,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{BASE_TAG}}
+    {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/github-stat.css">
+
+    {{content-for 'head-footer'}}
   </head>
   <body>
-    <script>
-      window.GithubStatENV = {{ENV}};
-      //logging to see what ember-cli does for me
-      var env = {{ENV}};
-      console.log(env);
+    {{content-for 'body'}}
 
-      window.EmberENV = window.GithubStatENV.EmberENV;
-    </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/github-stat.js"></script>
-    <script>
-      window.GithubStat = require('github-stat/app')['default'].create(GithubStatENV.APP);
-    </script>
+
+    {{content-for 'body-footer'}}
   </body>
 </html>

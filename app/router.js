@@ -1,7 +1,8 @@
 import Ember from 'ember';
+import config from './config/environment';
 
 var Router = Ember.Router.extend({
-  location: GithubStatENV.locationType
+  location: config.locationType
 });
 
 Router.map(function() {
@@ -15,6 +16,7 @@ Router.map(function() {
     this.resource('stars');
     this.resource('friends');
   });
+
 });
 
 export default Router;
